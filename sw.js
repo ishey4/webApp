@@ -1,11 +1,11 @@
-importScripts('/cache-polyfill.js');
+importScripts('/webapp/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('airhorner').then(function(cache) {
       return cache.addAll([
-        'idex.html',
-        'psp-logl.jpg'
+        '/webapp/idex.html',
+        '/webapp/psp-logl.jpg'
       ]).then(function() {
         return self.skipWaiting();
       });
