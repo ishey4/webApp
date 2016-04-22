@@ -7,6 +7,17 @@
     <style>
         .spin:hover{transform:rotate(360deg);}
     </style>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js', { scope: 'https://ishey4.github.io/webApp/*' }).then(function(reg) {
+    // registration worked
+    console.log('Registration succeeded. Scope is ' + reg.scope);
+  }).catch(function(error) {
+    // registration failed
+    console.log('Registration failed with ' + error);
+  });
+};
+</script>
 </head>
 <body>
     <div style="height:100%;width:100%;border:1px solid black;position:fixed;">
