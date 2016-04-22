@@ -4,8 +4,8 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('airhorner').then(function(cache) {
       return cache.addAll([
-        '/webapp/idex.html',
-        '/webapp/psp-logl.jpg'
+        '/webApp/idex.html',
+        '/webApp/psp-logl.jpg'
       ]).then(function() {
         return self.skipWaiting();
       });
