@@ -18,7 +18,7 @@
     </div>
 <script>
  if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js', { scope: 'https://ishey4.github.io/webApp/*' }).then(function(reg) {
+  navigator.serviceWorker.register('/webApp/sw.js', { scope: 'https://ishey4.github.io/webApp/*' }).then(function(reg) {
     // registration worked
     console.log('Registration succeeded. Scope is ' + reg.scope);
   }).catch(function(error) {
