@@ -1,4 +1,4 @@
-importScripts('/webapp/cache-polyfill.js');
+importScripts('/webApp/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
