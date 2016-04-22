@@ -2,7 +2,7 @@ importScripts('/webApp/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('psp').then(function(cache) {
+    caches.open('ishey4.github.io').then(function(cache) {
       return cache.addAll([
         '/webApp/index.html',
         '/webApp/psp-logo.jpg'
